@@ -1,0 +1,25 @@
+.wrapper {
+  background: rgba(172, 160, 183, 0.5);
+  width: 90px;
+  height: 537px;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.parameters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  text-align: center;
+  li {
+    margin-top: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
