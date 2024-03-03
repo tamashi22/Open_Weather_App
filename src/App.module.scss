@@ -5,7 +5,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  @media (max-height: 910px) {
+    height: 100%;
+  }
 }
+
 .container {
   display: flex;
   align-items: center;
