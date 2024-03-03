@@ -1,5 +1,31 @@
 .wrapper {
   background: rgba(172, 160, 183, 0.5);
-  width: 884px;
-  padding: 20px;
+
+  padding: 40px;
+  border-radius: 40px;
+  .title {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    h3 {
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+}
+.activities {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+.activityItem {
+  .image {
+    width: 178px;
+    height: 108px;
+    border-radius: 10px;
+  }
+  .description {
+    color: #000000;
+  }
 }
