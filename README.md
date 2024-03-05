@@ -18,7 +18,7 @@ This is a Weather Dashboard Application that allows users to search for and disp
 The project uses React + Vite 
 1. Clone the repository: `git clone https://github.com/tamashi22/Open_Weather_App.git`
 2. Install dependencies: `npm install`
-3. Start the application: `npm start`
+3. Start the application: `npm run dev`
 4. enjoy ;)
 
 ## Usage
