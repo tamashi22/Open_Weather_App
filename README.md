@@ -27,4 +27,4 @@ To use the application, simply enter a city name in the search bar and press ent
 
 ## Live Demo
 
-<a href="https://vercel.com/tamashi22/open-weather-app" target="_blank">Visit this page to see the application in action.</a>
+<a href="https://open-weather-app-chi.vercel.app/" target="_blank">Visit this page to see the application in action.</a>
