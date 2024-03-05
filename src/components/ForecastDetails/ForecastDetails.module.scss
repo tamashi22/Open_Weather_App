@@ -3,4 +3,37 @@
   width: 324px;
   border-radius: 40px;
   padding: 20px;
+  .time {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+.title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.weacherDeatails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 50px;
+  .detail {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .detailTitle {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .index {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
 }

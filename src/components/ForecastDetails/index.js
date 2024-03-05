@@ -1,2 +1,2 @@
-import { ForecastDetails } from "./ForecastDetails";
-export { ForecastDetails };
+import { ForecastDetails } from './ForecastDetails'
+export { ForecastDetails }

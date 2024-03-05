@@ -8,6 +8,9 @@
   @media (max-height: 910px) {
     height: 100%;
   }
+  @media (max-width: 850px) {
+    padding: 5px;
+  }
 }
 
 .container {
@@ -15,6 +18,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 30px;
+  @media (max-width: 850px) {
+    padding: 10px;
+  }
+
   .form {
     display: flex;
     gap: 12px;
@@ -23,6 +30,9 @@
       height: 30px;
       opacity: 0.8;
       background-color: lightgray;
+      @media (max-width: 850px) {
+        width: 100%;
+      }
     }
     .button {
       width: 100px;
@@ -44,6 +54,9 @@
 }
 .details {
   margin-top: 40px;
+  @media (max-width: 850px) {
+    margin-top: 10px;
+  }
   .temp {
     font-size: 64px;
     font-weight: 500;
@@ -60,4 +73,40 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 20px;
+  @media (max-width: 850px) {
+    width: 100%;
+    align-items: center;
+  }
+}
+.loading {
+  margin-top: 10px;
+  color: #d69e36;
+}
+.image {
+  width: 321px;
+  height: 321px;
+  @media (max-width: 850px) {
+    width: 200px;
+    height: 200px;
+  }
+}
+.seach {
+  position: relative;
+  .searchHistory {
+    position: absolute;
+
+    background: #ffff;
+    color: #000000;
+    width: 100%;
+    border-radius: 12px;
+    .searchItem {
+      cursor: pointer;
+      padding: 5px;
+      &:hover {
+        border-radius: 12px;
+        background: #d69e36;
+      }
+    }
+  }
 }

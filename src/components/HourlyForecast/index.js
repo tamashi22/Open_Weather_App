@@ -1,2 +1,2 @@
-import HourlyForecast from "./HourlyForecast";
-export { HourlyForecast };
+import HourlyForecast from './HourlyForecast'
+export { HourlyForecast }

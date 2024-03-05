@@ -1,0 +1,42 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  @media (max-width: 850px) {
+    max-width: 350px;
+  }
+}
+.swiperSlide {
+  width: auto !important;
+}
+.item {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .date {
+    font-size: 17.72px;
+  }
+  .icon {
+    width: 31.01px;
+    height: 30.12px;
+  }
+}
+.arrowButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 0;
+  position: absolute;
+  top: calc(50% - 15px);
+  z-index: 1000;
+  cursor: pointer;
+}
+.next {
+  right: -20px;
+}
+.prev {
+  left: -20px;
+  transform: rotate(180deg);
+}

@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
-import clsx from "clsx";
+import clsx from 'clsx'
 
-import styles from "./TextField.module.scss";
+import styles from './TextField.module.scss'
 
 export const TextField = React.forwardRef(
   (
@@ -16,7 +16,7 @@ export const TextField = React.forwardRef(
       onClear,
       ...props
     },
-    ref
+    ref,
   ) => {
     return (
       <div>
@@ -30,21 +30,21 @@ export const TextField = React.forwardRef(
 
         <div className={styles.container}>
           {iconLeft ? (
-            <div className={styles["icon-left"]}>{iconLeft}</div>
+            <div className={styles['icon-left']}>{iconLeft}</div>
           ) : null}
           <input
             ref={ref}
             className={clsx(
               styles.input,
               className,
-              iconLeft ? styles[`input--iconLeft`] : ""
+              iconLeft ? styles[`input--iconLeft`] : '',
             )}
             {...props}
           />
         </div>
       </div>
-    );
-  }
-);
+    )
+  },
+)
 
-TextField.displayName = "TextField";
+TextField.displayName = 'TextField'

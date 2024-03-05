@@ -1,10 +1,10 @@
-import React from "react";
-import styles from "./NavBar.module.scss";
-import Profile from "images/profile.png";
-import Weather from "icons/wt.svg";
-import Explore from "icons/Explore.svg";
-import Location from "icons/Location.svg";
-import Settings from "icons/Settings.svg";
+import React from 'react'
+import styles from './NavBar.module.scss'
+import Profile from 'images/profile.png'
+import Weather from 'icons/wt.svg'
+import Explore from 'icons/Explore.svg'
+import Location from 'icons/Location.svg'
+import Settings from 'icons/Settings.svg'
 function NavBar() {
   return (
     <div className={styles.wrapper}>
@@ -38,7 +38,7 @@ function NavBar() {
         </li>
       </ui>
     </div>
-  );
+  )
 }
 
-export default NavBar;
+export default NavBar

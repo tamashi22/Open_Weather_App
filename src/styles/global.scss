@@ -1,4 +1,9 @@
-@import "./common/devices";
+@import './common/devices';
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+@import 'swiper/css/autoplay';
+@import 'swiper/css/scrollbar';
 * {
   margin: 0;
   padding: 0;

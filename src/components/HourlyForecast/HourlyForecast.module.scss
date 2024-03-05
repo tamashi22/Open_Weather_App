@@ -1,0 +1,22 @@
+.wrapper {
+  background: rgba(172, 160, 183, 0.5);
+  padding: 20px;
+  width: 100%;
+  border-radius: 40px;
+  min-height: 285px;
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.chart {
+  max-height: 262px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  opacity: 0.9;
+  border-radius: 40px;
+}
