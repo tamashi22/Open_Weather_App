@@ -15,7 +15,7 @@ This is a Weather Dashboard Application that allows users to search for and disp
 - **Recent Places**: The application stores the last 5 searched places in local storage. This allows users to quickly access the weather information of their recent searches without having to type the city name again.
 
 ## Setup
-
+The project uses React + Vite 
 1. Clone the repository: `git clone https://github.com/tamashi22/Open_Weather_App.git`
 2. Install dependencies: `npm install`
 3. Start the application: `npm start`
