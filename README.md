@@ -24,3 +24,7 @@ This is a Weather Dashboard Application that allows users to search for and disp
 ## Usage
 
 To use the application, simply enter a city name in the search bar and press enter. The application will fetch and display the current weather and forecast for that city.
+
+## Live Demo
+
+<a href="https://vercel.com/tamashi22/open-weather-app" target="_blank">Visit this page to see the application in action.</a>
