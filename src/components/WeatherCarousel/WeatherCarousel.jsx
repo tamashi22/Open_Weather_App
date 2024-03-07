@@ -27,7 +27,7 @@ export const WeatherCarousel = ({ weather }) => {
         className={styles.swiper}
         onSwiper={setSwiper}
         slidesPerView="auto"
-        spaceBetween={10}
+        spaceBetween={23}
       >
         {weather &&
           weather.map((item, index) => (

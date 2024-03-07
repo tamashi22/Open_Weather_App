@@ -20,6 +20,10 @@
   .icon {
     width: 31.01px;
     height: 30.12px;
+    @media (max-width: 850px) {
+      width: 70px;
+      height: 70px;
+    }
   }
 }
 .arrowButton {

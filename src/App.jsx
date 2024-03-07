@@ -163,7 +163,7 @@ function App() {
       <div className={styles.detailsContainer}>
         {!isTablet && <NavBar />}
         <div className={styles.PlaceDetails}>
-          {isMobile && (
+          {isTablet && (
             <div className={styles}>
               <WeatherCarousel weather={daylyData?.list} />
             </div>
