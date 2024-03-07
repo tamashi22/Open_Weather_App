@@ -1,15 +1,16 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import dayjs from 'dayjs'
+import useMediaQuery from './helpers/useMediaQuery'
 import { TextField } from './components/ui/TextField'
 import { HourlyForecast } from './components/HourlyForecast'
 import { NavBar } from './components/NavBar'
+import { WeatherCarousel } from './components/WeatherCarousel'
 import { PlaceActivities } from './components/PlaceActivities'
 import { ForecastDetails } from './components/ForecastDetails'
 import { WeatherApi } from './services/WeatherApi'
-import useMediaQuery from './helpers/useMediaQuery'
+import { EventsApi } from './services/EventApi'
+
 import styles from './App.module.scss'
-import { WeatherCarousel } from './components/WeatherCarousel'
 function App() {
   const [inputValue, setInputValue] = useState('')
   const [place, setPlace] = useState('landscape')
@@ -19,6 +20,7 @@ function App() {
   const [searchHistory, setSearchHistory] = useState([])
   const [searchHistoryVisible, setSearchHistoryVisible] = useState(false)
   const [daylyData, setDailyData] = useState({})
+  const [background, SetBackground] = useState({})
   const isTablet = useMediaQuery('(max-width: 1100px)')
   const isMobile = useMediaQuery('(max-width: 850px)')
 
@@ -26,7 +28,6 @@ function App() {
     event.preventDefault()
     const newPlace = inputValue
     setPlace(newPlace)
-
     if (newPlace) {
       setWeatherData({})
       WeatherApi.getCurrentWeather(newPlace)
@@ -71,12 +72,22 @@ function App() {
         })
     }
   }, [weatherData])
-  console.log('daylydata', daylyData)
+  React.useEffect(() => {
+    EventsApi.getEvents(place, 2)
+      .then(response => {
+        SetBackground({})
+        SetBackground(response.data.results)
+      })
+      .catch(error => {
+        console.error('Error fetching data: ', error)
+      })
+  }, [place])
+
   return (
     <div
       className={styles.wrapper}
       style={{
-        backgroundImage: `url(https://source.unsplash.com/1600x900/?${place.replaceAll(' ', '-')})`,
+        backgroundImage: `url(${background[1]?.urls?.full})`,
       }}
     >
       <div className={styles.container}>

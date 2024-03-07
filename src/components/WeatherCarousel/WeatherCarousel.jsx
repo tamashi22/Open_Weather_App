@@ -7,7 +7,6 @@ import Cloud from 'icons/cloud.svg'
 import Arrow from 'icons/Arrow.svg'
 import styles from './WeatherCarousel.module.scss'
 export const WeatherCarousel = ({ weather }) => {
-  console.log('dayly', weather)
   const [swiper, setSwiper] = React.useState()
   const [isAtStart, setIsAtStart] = React.useState(true)
   const [isAtEnd, setIsAtEnd] = React.useState(false)

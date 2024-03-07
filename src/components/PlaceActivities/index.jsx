@@ -1,40 +1,22 @@
 import React, { useEffect, useState } from 'react'
-import axios from 'axios'
 import { EventsApi } from '../../services/EventApi'
-import styles from './PlaceActivities.module.scss'
 import Heart from 'icons/Heart.svg'
-import Activity from 'images/activity.png'
-
+import styles from './PlaceActivities.module.scss'
 export const PlaceActivities = ({ place }) => {
-  const access_token = '2G66_3i79DimftLse7HZN09HbviecNwhB77g8N1Lyg4'
   const [images, setImages] = useState([])
   useEffect(() => {
     if (place !== 'landscape' && place) {
-      const fetchImages = async () => {
-        try {
-          setImages([])
-          const response = await axios.get(
-            'https://api.unsplash.com/search/photos',
-            {
-              headers: {
-                Authorization: `Client-ID ${access_token}`,
-              },
-              params: {
-                query: place,
-                per_page: 4,
-              },
-            },
-          )
+      setImages([])
+      EventsApi.getEvents(place, 4)
+        .then(response => {
           setImages(response.data.results)
-        } catch (error) {
-          console.error(error)
-        }
-      }
-
-      fetchImages()
+        })
+        .catch(error => {
+          console.error('Error fetching data: ', error)
+        })
     }
   }, [place])
-  console.log(images)
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.title}>
