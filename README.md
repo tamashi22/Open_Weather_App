@@ -6,7 +6,7 @@ This is a Weather Dashboard Application that allows users to search for and disp
 
 ## Features
 
-- **UI Implementation**: The user interface is implemented as per the provided designs, with attention to details such as layout, colors, fonts, and responsiveness. The design is implemented with HTML, CSS (or a CSS preprocessor like SASS), and JavaScript. The application is responsive and works well on both desktop and mobile devices.
+- **UI Implementation**: The user interface is implemented as per the provided designs, with attention to details such as layout, colors, fonts, and responsiveness. The design is implemented with HTML ,SASS and JavaScript. The application is responsive and works well on both desktop and mobile devices.
 - **API Integration**: The application integrates a weather API to fetch current weather data and forecasts. It displays the data on the UI according to the designs. It also implements error handling for the API requests, displaying appropriate messages to the user if data cannot be fetched.
 - **Search Functionality**: The application implements a search functionality that allows users to enter a city name and retrieve and display the weather data for that city. It includes input validation and error handling to manage invalid or empty search queries.
 - **Dynamic Background**: The application features a dynamic background that changes based on the city. This provides a more immersive and personalized user experience.
